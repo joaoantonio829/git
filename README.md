@@ -342,3 +342,69 @@ Material adaptado e enriquecido para fins didáticos por *Anderson RM Gomes* �
 ---
 
 🚀 **Próximo passo:** quer que eu gere uma versão em PDF para imprimir, slides (PowerPoint) ou uma folha de cola (cheatsheet) com os comandos mais usados? Respondendo aqui eu já gero para você.
+
+# 🚀 **Próximos passos — Conectando ao GitHub**
+
+---
+
+## 🌍 1. Adicionar repositório remoto
+
+Após criar seu repositório no **GitHub** (sem README, sem .gitignore, sem license):
+
+```bash
+# adiciona o repositório remoto chamado 'origin'
+git remote add origin https://github.com/seuusuario/meu_projeto.git
+
+# confirma o remoto configurado
+git remote -v
+```
+
+> Dica: se preferir SSH (mais seguro), use
+> `git remote add origin git@github.com:seuusuario/meu_projeto.git`
+
+---
+
+## 🚀 2. Enviar código local para o remoto
+
+```bash
+# envia a branch principal para o GitHub
+git push -u origin main
+```
+
+> O parâmetro `-u` cria o vínculo entre a branch local e a remota,
+> permitindo usar apenas `git push` ou `git pull` nas próximas vezes.
+
+---
+
+## 🔁 3. Atualizar e sincronizar com o remoto
+
+```bash
+# baixar e integrar alterações do GitHub
+git pull origin main
+
+# ou simplesmente, após o primeiro push:
+git pull
+```
+
+> ⚠️ Sempre dê `git pull` antes de começar a trabalhar,
+> para garantir que sua branch local está atualizada com a remota.
+
+---
+
+## 🦯 4. Verificar status e branches remotas
+
+```bash
+git branch -a     # lista todas as branches (locais e remotas)
+git remote show origin
+```
+
+> Isso ajuda a confirmar se seu repositório local e o remoto estão sincronizados corretamente.
+
+---
+
+## ✅ Conclusão
+
+Agora seu repositório local está **conectado ao GitHub**, permitindo que você **compartilhe, colabore e versiona remotamente** seu projeto.
+
+**Na próxima aula:** veremos como **trabalhar em equipe** com *branches remotas*, *pull requests*, *rebase* e *fluxos colaborativos (Git Flow)*.
+
