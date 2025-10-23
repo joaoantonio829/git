@@ -15,7 +15,7 @@ Configure seu nome, e-mail e editor:
 ```bash
 # informações do usuário (obrigatórias para commits)
 git config --global user.name "João Antônio"
-git config --global user.email "joaoantoniocarvalhobrandao.com"
+git config --global user.email "joaoantoniocarvalhobrandao@gmail.com"
 
 # definir editor padrão (ex.: VS Code)
 git config --global core.editor "code --wait"
